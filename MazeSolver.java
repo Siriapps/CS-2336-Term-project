@@ -20,7 +20,7 @@ public class MazeSolver {
     public List<Cell> solve() {
 
         Map<Cell, Cell> parent = new HashMap<>();
-        Set<Cell> visited = new HashSet<>();
+        Set<Cell> visited = new HashSet<>(); // Keep track of visited cells.
 
         Stack<Cell> stack = new Stack<>();
         stack.push(start);
@@ -28,7 +28,7 @@ public class MazeSolver {
 
         while (!stack.isEmpty()) {
             Cell cur = stack.pop();
-            if (cur.equals(end)) break;
+            if (cur.equals(end)) break; // if cur is equal to the end cell, then it is found
 
             for (Cell nb : graph.get(cur)) {
                 if (!visited.contains(nb)) {

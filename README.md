@@ -50,3 +50,4 @@ Stores the row and column of a cell. It implements ```equals()``` and ```hashCod
 The maze takes an input of ```rows cols```.
 For example, the sample input of 8 8, results in:
 ![Output for input 8 8](./output.png)
+![Output for input 6 10](./output_2.png)
